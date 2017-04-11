@@ -448,52 +448,47 @@ reserved.\par\permission}}
 %% `upcase' documentclass option: \choosecase is defined either as a dummy or
 %% a macro to change the (expanded) argument to uppercase.
 \def\maketitle{\begin{titlepage}
-\large
+\centering
+\Large
 {\def\baselinestretch{1.2}\Large\bf \choosecase{\@title} \par}
-by\par
-{\Large  \choosecase{\@author}}
+
+{\rule{\textwidth}{1.5pt}}
+
+\large 
+        A Thesis\par
+        Presented to\par 
+        The Faculty of the Graduate School\par
+        University of Missouri-Columbia\par
+
+{\rule{\textwidth}{1.5pt}}
+
+\large In Partial Fulfillment\par
+                Of the Requirements for the Degree\par
+                Master of Science\par
 \par
-\@prevdegrees
-\par
-\choosecase{Submitted to the} \choosecase{\@department} \\
-\choosecase{in partial fulfillment of the requirements for the}
-\choosecase{\@degreeword} 
-\choosecase{of}
-\par
-\choosecase{\@degree}
-\par
-at the
-\par\MIT\par
-\@degreemonth\ \@degreeyear
-\par
-\@copyrightnotice
-\par
-\vskip 3\baselineskip
-\signature{Author}{\@department \\ \@thesisdate}
-\par
-\vfill
-\unvbox\@titlesupervisor
-\par
-\vfill
-\signature{Accepted by}{\@chairmanname \\ \@chairmantitle}
-\vfill
+
+{\rule{\textwidth}{1.5pt}}
+\large 
+By\par
+Ming Du\par
+April 2017\par
 \end{titlepage}}
 
 % this environment should probably be called abstract,
 % but we want people to also be able to get at the more
 % basic abstract environment
 \def\abstractpage{\cleardoublepage
-\begin{center}{\large{\bf \@title} \\
-by \\
-\@author \\[\baselineskip]}
-\par
-\def\baselinestretch{1}\@normalsize
-Submitted to the \@department \\
-on \@thesisdate, in partial fulfillment of the \\
-requirements for the \@degreeword\ of \\
-\@degree
-\end{center}
-\par
+%\begin{center}{\large{\bf \@title} \\
+%by \\
+%\@author \\[\baselineskip]}
+%\par
+%\def\baselinestretch{1}\@normalsize
+%Submitted to the \@department \\
+%on \@thesisdate, in partial fulfillment of the \\
+%requirements for the \@degreeword\ of \\
+%\@degree
+%\end{center}
+%\par
 \begin{abstract}}
 
 %% Changed from \unvbox to \unvcopy for use with multiple copies of abstract
